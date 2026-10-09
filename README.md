@@ -78,7 +78,7 @@ Install once, guard every project from a single base file.
 1. Install the package globally:
 
 ```bash
-opencode plugin add opencodeignore-v2
+opencode plugin add @z2net/opencodeignore-v2
 ```
 
 2. Create the base file at `$XDG_CONFIG_HOME/opencode/.agentignore` (default `~/.config/opencode/.agentignore`):
@@ -98,7 +98,7 @@ Only uncommented lines count, same syntax as project files. A missing base file 
   "$schema": "https://opencode.ai/config.json",
   "plugins": [
     {
-      "package": "opencodeignore-v2",
+      "package": "@z2net/opencodeignore-v2",
       "options": { "effect": "deny" }
     }
   ]

@@ -1,7 +1,7 @@
 {
-  "name": "opencodeignore-v2",
+  "name": "@z2net/opencodeignore-v2",
   "description": "OpenCode V2 plugin that keeps .agentignore-guarded paths away from the agent: permission enforcement, result filtering, script commands, and an RPC contract.",
-  "version": "0.1.0",
+  "version": "0.0.0-stage",
   "module": "src/index.ts",
   "type": "module",
   "license": "MIT",
@@ -14,6 +14,9 @@
     "url": "https://github.com/DotBlood/opencodeignore-v2/issues"
   },
   "homepage": "https://github.com/DotBlood/opencodeignore-v2",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": ["opencode", "opencode-plugin", "agentignore"],
   "files": ["src/", "README.md", "LICENSE"],
   "exports": {
