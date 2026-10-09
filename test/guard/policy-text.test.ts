@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test"
-import { buildPolicyText } from "@skill/policy-text.ts"
+import { buildPolicyText } from "../../src/skill/policy-text.ts"
 
 describe("buildPolicyText", () => {
   test("states the empty case", () => {

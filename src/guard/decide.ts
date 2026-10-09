@@ -1,4 +1,4 @@
-import type { OpencodeignoreOptions } from "@options/config.js"
+import type { OpencodeignoreOptions } from "../options/config.js"
 
 export type Decision = { effect: "allow" } | { effect: "ask" | "deny"; message: string }
 

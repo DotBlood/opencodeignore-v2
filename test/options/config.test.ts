@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test"
-import { parseOptions } from "@options/config.ts"
+import { parseOptions } from "../../src/options/config.ts"
 
 describe("parseOptions", () => {
   test("defaults to deny with skill enabled", () => {

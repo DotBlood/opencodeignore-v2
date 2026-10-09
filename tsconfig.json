@@ -25,16 +25,6 @@
     // Some stricter flags (disabled by default)
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "noPropertyAccessFromIndexSignature": false,
-
-    // Path aliases: @/* covers src, the rest map feature folders and the RPC entry
-    "paths": {
-      "@/*": ["./src/*"],
-      "@commands/*": ["./src/commands/*"],
-      "@guard/*": ["./src/guard/*"],
-      "@options/*": ["./src/options/*"],
-      "@skill/*": ["./src/skill/*"],
-      "@rpc": ["./src/rpc.ts"]
-    }
+    "noPropertyAccessFromIndexSignature": false
   }
 }

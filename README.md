@@ -208,7 +208,7 @@ test/               mirrors src/, one file per module
 opencode.jsonc      local plugin entry for development
 ```
 
-Imports use path aliases (`@`, `@guard`, `@options`, `@commands`, `@skill`, `@rpc`) mapped in `tsconfig.json`. Bun resolves them at runtime.
+Imports are relative. The host loader does not resolve tsconfig path aliases, so `@`-style imports stay out.
 
 ## Development
 

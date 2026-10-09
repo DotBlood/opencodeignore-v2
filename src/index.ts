@@ -2,20 +2,20 @@ import path from "node:path"
 import { promises as fs } from "node:fs"
 import { Plugin, Skill } from "@opencode/plugin/effect"
 import { Effect, Schedule, Stream } from "effect"
-import { parseOptions, type OpencodeignoreOptions } from "@options/config.js"
+import { parseOptions, type OpencodeignoreOptions } from "./options/config.js"
 import {
   emptyMatcher,
   isIgnoredPath,
   loadMatcher,
   type LoadedMatcher,
   type MatcherSources,
-} from "@guard/matcher.js"
-import { decideForResources } from "@guard/decide.js"
-import { filterResultPaths, stripPromptFiles } from "@guard/result-filter.js"
-import { buildPolicyText } from "@skill/policy-text.js"
-import { OpencodeignoreRpc } from "@rpc"
-import type { IgnoreAction } from "@commands/definition.js"
-import { createActionRunner, defaultEntryLookup } from "@commands/actions.js"
+} from "./guard/matcher.js"
+import { decideForResources } from "./guard/decide.js"
+import { filterResultPaths, stripPromptFiles } from "./guard/result-filter.js"
+import { buildPolicyText } from "./skill/policy-text.js"
+import { OpencodeignoreRpc } from "./rpc.js"
+import type { IgnoreAction } from "./commands/definition.js"
+import { createActionRunner, defaultEntryLookup } from "./commands/actions.js"
 import {
   findPluginEntry,
   globalBaseFile,
@@ -23,7 +23,7 @@ import {
   ownPackageName,
   pluginRootDir,
   readEntryOptions,
-} from "@options/config-file.js"
+} from "./options/config-file.js"
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null

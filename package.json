@@ -1,7 +1,7 @@
 {
   "name": "@z2net/opencodeignore-v2",
   "description": "OpenCode V2 plugin that keeps .agentignore-guarded paths away from the agent: permission enforcement, result filtering, script commands, and an RPC contract.",
-  "version": "0.0.0-stage",
+  "version": "0.1.1",
   "module": "src/index.ts",
   "type": "module",
   "license": "MIT",

@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test"
-import { decideForResources } from "@guard/decide.ts"
-import { parseOptions } from "@options/config.ts"
+import { decideForResources } from "../../src/guard/decide.ts"
+import { parseOptions } from "../../src/options/config.ts"
 
 const options = parseOptions(undefined)
 const testPath = (value: string): boolean => value.split("/").includes("dist")

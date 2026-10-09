@@ -8,7 +8,7 @@ import {
   globalBaseFile,
   readEntryOptions,
   writeEntryOptions,
-} from "@options/config-file.ts"
+} from "../../src/options/config-file.ts"
 
 const roots: string[] = []
 

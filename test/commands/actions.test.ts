@@ -3,11 +3,11 @@ import { promises as fs } from "node:fs"
 import os from "node:os"
 import path from "node:path"
 import { parse } from "jsonc-parser"
-import { parseOptions } from "@options/config.ts"
-import { emptyMatcher } from "@guard/matcher.ts"
-import { AGENTIGNORE_TEMPLATE } from "@commands/definition.ts"
-import { createActionRunner, type ActionDeps, type ActionState } from "@commands/actions.ts"
-import { writeEntryOptions, type PluginEntryLocation } from "@options/config-file.ts"
+import { parseOptions } from "../../src/options/config.ts"
+import { emptyMatcher } from "../../src/guard/matcher.ts"
+import { AGENTIGNORE_TEMPLATE } from "../../src/commands/definition.ts"
+import { createActionRunner, type ActionDeps, type ActionState } from "../../src/commands/actions.ts"
+import { writeEntryOptions, type PluginEntryLocation } from "../../src/options/config-file.ts"
 
 const roots: string[] = []
 

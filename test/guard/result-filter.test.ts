@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test"
-import { filterResultPaths, stripPromptFiles } from "@guard/result-filter.ts"
+import { filterResultPaths, stripPromptFiles } from "../../src/guard/result-filter.ts"
 
 const testPath = (value: string): boolean => value.includes("dist")
 

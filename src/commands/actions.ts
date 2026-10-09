@@ -1,9 +1,9 @@
 import path from "node:path"
-import { parseOptions, type OpencodeignoreOptions } from "@options/config.js"
-import type { LoadedMatcher } from "@guard/matcher.js"
+import { parseOptions, type OpencodeignoreOptions } from "../options/config.js"
+import type { LoadedMatcher } from "../guard/matcher.js"
 import { AGENTIGNORE_TEMPLATE, ignoreUsage, toggleEffect, type IgnoreAction } from "./definition.js"
-import type { PluginEntryLocation } from "@options/config-file.js"
-import { findPluginEntry, ownPackageName, pluginRootDir, writeEntryOptions } from "@options/config-file.js"
+import type { PluginEntryLocation } from "../options/config-file.js"
+import { findPluginEntry, ownPackageName, pluginRootDir, writeEntryOptions } from "../options/config-file.js"
 
 export interface ActionState {
   options: OpencodeignoreOptions

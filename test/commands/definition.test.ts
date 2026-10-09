@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test"
-import { AGENTIGNORE_TEMPLATE, ignoreUsage, toggleEffect } from "@commands/definition.ts"
+import { AGENTIGNORE_TEMPLATE, ignoreUsage, toggleEffect } from "../../src/commands/definition.ts"
 
 describe("toggleEffect", () => {
   test("flips ask and deny", () => {
