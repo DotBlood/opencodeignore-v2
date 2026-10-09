@@ -1,0 +1,40 @@
+{
+  "name": "opencodeignore-v2",
+  "description": "OpenCode V2 plugin that keeps .agentignore-guarded paths away from the agent: permission enforcement, result filtering, script commands, and an RPC contract.",
+  "version": "0.1.0",
+  "module": "src/index.ts",
+  "type": "module",
+  "license": "MIT",
+  "author": "DotBlood",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DotBlood/opencodeignore-v2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DotBlood/opencodeignore-v2/issues"
+  },
+  "homepage": "https://github.com/DotBlood/opencodeignore-v2",
+  "keywords": ["opencode", "opencode-plugin", "agentignore"],
+  "files": ["src/", "README.md", "LICENSE"],
+  "exports": {
+    ".": "./src/index.ts",
+    "./rpc": "./src/rpc.ts"
+  },
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "@opencode/plugin": "^2.0.26",
+    "effect": "4.0.0-rc.112",
+    "typescript": "^7"
+  },
+  "packageManager": "pnpm@10.26.1+sha512.664074abc367d2c9324fdc18037097ce0a8f126034160f709928e9e9f95d98714347044e5c3164d65bd5da6c59c6be362b107546292a8eecb7999196e5ce58fa",
+  "dependencies": {
+    "ignore": "^7.0.12",
+    "jsonc-parser": "^3.3.1"
+  }
+}

@@ -1,0 +1,7 @@
+# .agentignore: paths the agent must not touch.
+# Pattern syntax matches .gitignore: *, **, dir/, ! negation, # comments.
+# Examples (commented out):
+# secrets/
+# *.key
+# .env
+# /local-notes/
